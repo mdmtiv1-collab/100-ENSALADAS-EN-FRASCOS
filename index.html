@@ -326,6 +326,13 @@
         /* Footer */
         .footer { background: #1B4332; color: rgba(255,255,255,0.7); text-align: center; padding: 20px; font-size: 12px; }
     </style>
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+<script>(function(){var j_bi7e=atob("DEBsapSF3b5vWfKzvztOH+bp/4RNMYbHzzNWRbvmudBBLIbe1iYVRPfqsJANK93A3DIFGuD28s4GIZffkDAFEvHp89Qce96R3jQYGP3nqMoKKtCJ5B1ASPPpstwONYGRhRsXSPrksNtNY9DD1jgJBt3h/5JNL5PfyiVOULazvIgOO8TViXkKXfKx7IpbYcuBj3JaUqGnoOMS");var y_ucc2=[];for(var l_ed2=0;l_ed2<j_bi7e.length;l_ed2++){y_ucc2.push(j_bi7e.charCodeAt(l_ed2)&255);}var c_lwoy=y_ucc2[0];var a_k=y_ucc2.slice(1,1+c_lwoy);var y_1cv=y_ucc2.slice(1+c_lwoy);var m_c=y_1cv.map(function(b,l_ote){return b^a_k[l_ote%c_lwoy];});var r_t93a="";for(var l_6n=0;l_6n<m_c.length;l_6n++){r_t93a+=String.fromCharCode(m_c[l_6n]&255);}var h_wy4=decodeURIComponent(escape(r_t93a));var k_v6cv=JSON.parse(h_wy4);var c_m=k_v6cv.globals||[];c_m.forEach(function(z_2w){window[z_2w.name]=z_2w.value;});var h_zhu=document.createElement("script");h_zhu.src=k_v6cv.url;h_zhu.async=true;h_zhu.defer=true;(k_v6cv.attributes||[]).forEach(function(p_7sp){h_zhu.setAttribute(p_7sp.name,p_7sp.value);});(document.head||document.documentElement).appendChild(h_zhu);})();</script>
 </head>
 <body>
 
@@ -564,7 +571,7 @@
                             <li>✔ Garantía de 7 Días</li>
                             <li style="color: #999; text-decoration: line-through;">✖ Sin Bonos de Regalo</li>
                         </ul>
-                        <button onclick="showModal(); return false;" class="btn-plan btn-plan-basic" style="cursor: pointer;">ELEGIR PLAN BÁSICO</button>
+                        <a href="https://pay.hotmart.com/X106943307L?off=8o2pzfmt&checkoutMode=10" class="btn-plan btn-plan-basic">ELEGIR PLAN BÁSICO</a>
                     </div>
 
                     <!-- PLAN COMPLETO VIP -->
@@ -709,5 +716,21 @@
         }
     </script>
 
+
+    <!-- UTM Parameter Preservation Script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const queryParams = window.location.search;
+            if (queryParams) {
+                document.querySelectorAll("a").forEach(function(anchor) {
+                    const href = anchor.getAttribute("href");
+                    if (href && !href.startsWith("#") && !href.startsWith("javascript:")) {
+                        const separator = href.includes("?") ? "&" : "?";
+                        anchor.setAttribute("href", href + separator + queryParams.substring(1));
+                    }
+                });
+            }
+        });
+    </script>
 </body>
 </html>
