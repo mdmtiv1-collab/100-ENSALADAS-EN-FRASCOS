@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>100 Ensaladas en Frasco + Aderezos</title>
     
-    <!-- Google Fonts & FontAwesome CDN -->
+    <!-- Performance Optimizations: Preload LCP Image & Async CSS -->
+    <link rel="preload" as="image" href="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/14-819x1024.webp" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Poppins:ital,wght@0,400;0,600;0,700;0,800;0,900;1,700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
     <style>
         /* Mobile-First Reset & Core Layout */
@@ -347,7 +349,7 @@
 
         <!-- MAIN PRODUCT HERO IMAGE -->
         <div class="banner-img-box">
-            <img src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/14-819x1024.webp" alt="Ebook 100 Ensaladas en Frasco">
+            <img src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/14-819x1024.webp" alt="Ebook 100 Ensaladas en Frasco" fetchpriority="high" loading="eager" decoding="async">
         </div>
 
         <div class="btn-cta-box">
@@ -369,7 +371,7 @@
             </ul>
 
             <div class="banner-img-box">
-                <img src="assets/fridge_jars_es.jpg" alt="Ensaladas en frasco">
+                <img loading="lazy" decoding="async" src="assets/fridge_jars_es.jpg" alt="Ensaladas en frasco">
             </div>
 
             <div class="btn-cta-box">
@@ -383,7 +385,7 @@
 
             <!-- Card 1 -->
             <div class="recipe-card">
-                <img src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/6.webp" alt="Ensalada Refrescante">
+                <img loading="lazy" decoding="async" src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/6.webp" alt="Ensalada Refrescante">
                 <div class="recipe-info">
                     <h3>ENSALADA REFRESCANTE<br>+ ADEREZO CÍTRICO</h3>
                     <p>Conservación: 7 días<br>Calorías: 100 kcal</p>
@@ -392,7 +394,7 @@
 
             <!-- Card 2 -->
             <div class="recipe-card">
-                <img src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/7.webp" alt="Ensalada Caprese">
+                <img loading="lazy" decoding="async" src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/7.webp" alt="Ensalada Caprese">
                 <div class="recipe-info">
                     <h3>ENSALADA CAPRESE</h3>
                     <p>Conservación: 7 días<br>Calorías: 120 kcal</p>
@@ -401,7 +403,7 @@
 
             <!-- Card 3 -->
             <div class="recipe-card">
-                <img src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/9.webp" alt="Ensalada Caesar">
+                <img loading="lazy" decoding="async" src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/9.webp" alt="Ensalada Caesar">
                 <div class="recipe-info">
                     <h3>ENSALADA CAESAR<br>+ ADEREZO ORIGINAL</h3>
                     <p>Conservación: 7 días<br>Calorías: 115 kcal</p>
@@ -414,7 +416,7 @@
 
             <!-- Card 4 -->
             <div class="recipe-card">
-                <img src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/14.webp" alt="Ensalada Big Mac">
+                <img loading="lazy" decoding="async" src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/14.webp" alt="Ensalada Big Mac">
                 <div class="recipe-info">
                     <h3>ENSALADA BIG MAC<br>+ ADEREZO ESPECIAL</h3>
                     <p>Conservación: 7 días<br>Calorías: 180 kcal</p>
@@ -423,7 +425,7 @@
 
             <!-- Card 5 -->
             <div class="recipe-card">
-                <img src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/10.webp" alt="Ensalada Mediterránea">
+                <img loading="lazy" decoding="async" src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/10.webp" alt="Ensalada Mediterránea">
                 <div class="recipe-info">
                     <h3>ENSALADA MEDITERRÁNEA<br>+ ADEREZO AGRIDULCE</h3>
                     <p>Conservación: 7 días<br>Calorías: 120 kcal</p>
@@ -432,7 +434,7 @@
 
             <!-- Card 6 -->
             <div class="recipe-card">
-                <img src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/11.webp" alt="Ensalada Toscana">
+                <img loading="lazy" decoding="async" src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/11.webp" alt="Ensalada Toscana">
                 <div class="recipe-info">
                     <h3>ENSALADA TOSCANA<br>+ ADEREZO SICILIANO</h3>
                     <p>Conservación: 7 días<br>Calorías: 130 kcal</p>
@@ -441,7 +443,7 @@
 
             <!-- Card 7 -->
             <div class="recipe-card">
-                <img src="https://controle.nutriliacastro.com/wp-content/uploads/2025/10/Design-sem-nome-9-1.png" alt="Ensalada Rústica">
+                <img loading="lazy" decoding="async" src="https://controle.nutriliacastro.com/wp-content/uploads/2025/10/Design-sem-nome-9-1.png" alt="Ensalada Rústica">
                 <div class="recipe-info">
                     <h3>ENSALADA RÚSTICA<br>+ MOSTAZA Y MIEL</h3>
                     <p>Conservación: 7 días<br>Calorías: 160 kcal</p>
@@ -457,9 +459,9 @@
         <div class="section-padding">
             <h2 class="heading-title">Frescura EN EL <b>PLATO</b> + aderezos irresistibles</h2>
 
-            <div class="banner-img-box"><img src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/3.webp"></div>
-            <div class="banner-img-box"><img src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/1.webp"></div>
-            <div class="banner-img-box"><img src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/4.webp"></div>
+            <div class="banner-img-box"><img loading="lazy" decoding="async" src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/3.webp"></div>
+            <div class="banner-img-box"><img loading="lazy" decoding="async" src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/1.webp"></div>
+            <div class="banner-img-box"><img loading="lazy" decoding="async" src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/4.webp"></div>
 
             <div class="btn-cta-box">
                 <a href="#price" class="btn-cta">¡QUIERO LAS RECETAS!</a>
@@ -470,7 +472,20 @@
         <div class="section-padding">
             <h2 class="heading-title">MIRA la vista previa<br><b>de la clase 1 :</b></h2>
             <div class="video-wrapper">
-                <iframe src="https://www.youtube-nocookie.com/embed/2-A2chrN41w" title="Vista previa" allowfullscreen></iframe>
+
+            <div id="video-container" style="position: relative; width: 100%; height: 250px; background: #000; border-radius: 18px; overflow: hidden; cursor: pointer;" onclick="loadYoutubeVideo()">
+                <img src="https://img.youtube.com/vi/2-A2chrN41w/hqdefault.jpg" alt="Vista previa video" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; opacity: 0.85; border-radius: 18px !important;">
+                <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 68px; height: 68px; background: rgba(39, 174, 96, 0.95); border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(0,0,0,0.4);">
+                    <i class="fa-solid fa-play" style="color: #FFFFFF; font-size: 26px; margin-left: 4px;"></i>
+                </div>
+            </div>
+            <script>
+                function loadYoutubeVideo() {
+                    const container = document.getElementById('video-container');
+                    container.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/2-A2chrN41w?autoplay=1" title="Vista previa" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="width:100%; height:250px; border:none; border-radius:18px;"></iframe>';
+                }
+            </script>
+
             </div>
         </div>
 
@@ -480,21 +495,21 @@
 
             <!-- Bonus 1 -->
             <div class="bonus-card">
-                <img src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/15.webp" alt="Smoothies Detox">
+                <img loading="lazy" decoding="async" src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/15.webp" alt="Smoothies Detox">
                 <h4><b>BONO 1:</b><br><br>SMOOTHIES DETOX<br>20 RECETAS</h4>
                 <div class="price-tag"><del>$29 USD</del> ¡HOY ES GRATIS!</div>
             </div>
 
             <!-- Bonus 2 -->
             <div class="bonus-card">
-                <img src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/5.webp" alt="Shots Mañaneros">
+                <img loading="lazy" decoding="async" src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/5.webp" alt="Shots Mañaneros">
                 <h4><b>BONO 2:</b><br><br>SHOTS MAÑANEROS<br>5 RECETAS</h4>
                 <div class="price-tag"><del>$29 USD</del> ¡HOY ES GRATIS!</div>
             </div>
 
             <!-- Bonus 3 -->
             <div class="bonus-card">
-                <img src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/8.webp" alt="Aguas Saborizadas">
+                <img loading="lazy" decoding="async" src="https://controle.nutriliacastro.com/wp-content/uploads/2025/11/8.webp" alt="Aguas Saborizadas">
                 <h4><b>BONO 3:</b><br><br>AGUAS SABORIZADAS<br>15 RECETAS</h4>
                 <div class="price-tag"><del>$29 USD</del> ¡HOY ES GRATIS!</div>
             </div>
@@ -523,7 +538,7 @@
         <div class="pricing-section" id="price">
             <div class="pricing-box">
                 <h3>ENSALADAS EN FRASCO + ADEREZOS IRRESISTIBLES</h3>
-                <img src="assets/mockup_before_offers.jpg" style="width: 100%; border-radius: 18px !important; margin: 12px 0;">
+                <img loading="lazy" decoding="async" src="assets/mockup_before_offers.jpg" style="width: 100%; border-radius: 18px !important; margin: 12px 0;">
 
                 <ul class="pricing-bullets">
                     <li><span class="plus-green">+ </span><b>100 RECETAS DE ENSALADAS</b></li>
@@ -583,7 +598,7 @@
         <div class="section-padding">
             <h2 class="heading-title">ENSALADAS DE LA NUTRI<br><b>SOFÍA CASTRO</b></h2>
             <div class="banner-img-box" style="margin: 16px 0;">
-                <img src="assets/expert_photo.jpg" alt="Nutri Sofía Castro">
+                <img loading="lazy" decoding="async" src="assets/expert_photo.jpg" alt="Nutri Sofía Castro">
             </div>
             <p style="text-align: center; font-size: 14px; color: #444; line-height: 1.6;">
                 Mis recetas de Ensaladas en Frasco y Aderezos Irresistibles siempre tuvieron gran éxito en internet. Decidí reunir las 100 mejores recetas en un solo lugar y compartir este conocimiento contigo también.
@@ -595,9 +610,9 @@
             <p style="text-align: center; font-size: 15px; font-weight: 700; margin-bottom: 16px; color: #1B4332;">
                 Mira los mensajes que recibo casi todos los días:
             </p>
-            <div class="banner-img-box" style="margin-bottom: 12px;"><img src="assets/testimonial_1.jpg"></div>
-            <div class="banner-img-box" style="margin-bottom: 12px;"><img src="assets/testimonial_2.jpg"></div>
-            <div class="banner-img-box" style="margin-bottom: 12px;"><img src="assets/testimonial_3.jpg"></div>
+            <div class="banner-img-box" style="margin-bottom: 12px;"><img loading="lazy" decoding="async" src="assets/testimonial_1.jpg"></div>
+            <div class="banner-img-box" style="margin-bottom: 12px;"><img loading="lazy" decoding="async" src="assets/testimonial_2.jpg"></div>
+            <div class="banner-img-box" style="margin-bottom: 12px;"><img loading="lazy" decoding="async" src="assets/testimonial_3.jpg"></div>
         </div>
 
         <!-- SECTION 11: PREGUNTAS FRECUENTES -->
